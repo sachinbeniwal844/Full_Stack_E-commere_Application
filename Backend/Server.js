@@ -8,12 +8,13 @@ import userRoute from "./Route/user.js";
 
 const app = express();
 
+dotenv.config();
 // app.use(cors());
 app.use(cors({
-    origin : ["http://localhost:5173","https://full-stack-e-commere-application-liart.vercel.app/"]
+    origin : ["http://localhost:5173","https://full-stack-e-commere-application-liart.vercel.app"],credentials:true
 }));
 app.use(express.json());      // ya middleware very imp h.. jb postman/body se data bhejte h to ya use json ma parse krta h...
-dotenv.config();
+
 
 const PORT = process.env.PORT || 2000;
 const URI = process.env.MongoDBURI;
