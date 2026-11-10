@@ -8,7 +8,10 @@ import userRoute from "./Route/user.js";
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+    origin : ["http://localhost:5173","https://full-stack-e-commere-application-liart.vercel.app/"]
+}));
 app.use(express.json());      // ya middleware very imp h.. jb postman/body se data bhejte h to ya use json ma parse krta h...
 dotenv.config();
 

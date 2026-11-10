@@ -8,7 +8,8 @@ const Freebook = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:1000/book");
+        // const res = await axios.get("http://localhost:1000/book");
+        const res = await axios.get("https://full-stack-e-commere-application.onrender.com/book");
         console.log(res.data);
         setBook(res.data);
       } catch (error) {

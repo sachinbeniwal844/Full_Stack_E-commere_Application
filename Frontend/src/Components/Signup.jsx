@@ -28,7 +28,7 @@ const Signup = () => {
       password: data.password,
     };
     await axios
-      .post("http://localhost:1000/user/signup", userInfo)
+      .post("https://full-stack-e-commere-application.onrender.com/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
