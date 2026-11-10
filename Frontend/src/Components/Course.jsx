@@ -10,7 +10,7 @@ const Course = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("https://full-stack-e-commere-application.onrender.com/book");
+        const res = await axios.get("https://full-stack-e-commere-application.onrender.com/book/all-book");
         // console.log(res.data);
         setBook(res.data);
       } catch (error) {
