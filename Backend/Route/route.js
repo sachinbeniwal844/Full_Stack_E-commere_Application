@@ -3,6 +3,6 @@ import { getBook } from "../Controller/book.js";
 
 const router = express.Router();
 
-router.get("/all-book", getBook);
+router.get("/", getBook);
 
 export default router;
